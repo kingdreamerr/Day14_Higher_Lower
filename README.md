@@ -2,10 +2,10 @@
 
 ## Project Higher_Lower
 > This is a replica of the game higher or lower. The user is presented with two randomly selected people or companies and the user has to make a guess as to whic one is more famous betwwen the two.
-
+here is the link to the real game [click here](http://www.higherlowergame.com/)
 #### Preview:
 
-![guess the number](./guess.png)
+<!-- ![guess the number](./guess.png) -->
 
 ## How to run this on your device
 
