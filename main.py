@@ -61,5 +61,5 @@ while not incorrect:
     score += 1
     print(f"you're right! current score {score}.")
   else:
-    print(f'You lose your score is {score}')
+    print(f'Incorrect game over your score is {score}')
     incorrect = True
