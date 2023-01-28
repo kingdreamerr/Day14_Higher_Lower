@@ -5,7 +5,7 @@
 here is the link to the real game [click here](http://www.higherlowergame.com/)
 #### Preview:
 
-<!-- ![guess the number](./guess.png) -->
+![higher or lower](./game.png)
 
 ## How to run this on your device
 
