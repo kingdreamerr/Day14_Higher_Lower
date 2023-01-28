@@ -23,3 +23,43 @@ def who_is_famous(item1,item2):
   else:
     famous = item2["name"]
   return famous
+
+
+people = choosePersons()
+person2 = people[1]
+
+print(logo)
+while not incorrect:
+  person1 = person2
+  people = choosePersons()
+  person2 = people[0]
+
+  print(f'Compare A: {person1["name"]} is a {person1["description"]} from {person1["country"]}')
+  print(vs)
+  print(f'Against B: {person2["name"]} is a {person2["description"]} from {person2["country"]}')
+
+  guess = input("Who has more followers? 'A' or 'B' : ").lower()
+  isGuessCorrect = False
+  while not isGuessCorrect:
+    if guess == "a" or guess == "b":
+        isGuessCorrect = True
+    else:
+      guess = input("incorrect input \n please choose between A and B : ")
+  
+  correctPerson = who_is_famous(person1,person2)
+
+  if(guess == "a"):
+    selectedPerson = {}
+    selectedPerson = person1
+  else:
+    selectedPerson = person2
+
+  os.system("clear")
+  print(logo)
+
+  if selectedPerson["name"] == correctPerson:
+    score += 1
+    print(f"you're right! current score {score}.")
+  else:
+    print(f'You lose your score is {score}')
+    incorrect = True
